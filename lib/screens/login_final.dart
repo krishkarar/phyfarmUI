@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phyfarm_ui/screens/forgot_pw.dart';
 import 'sign_up_final.dart';
 
 class LoginFinal extends StatelessWidget {
@@ -231,10 +232,15 @@ class LoginFinal extends StatelessWidget {
                           ],
                         ),
 
-                        Text(
-                          'Forgot Password?',
-                          style: TextStyle(
-                            fontSize: 12.sp,
+                        InkWell(
+                          onTap: (){
+                            Navigator.pushNamed(context, ForgotPW.id);
+                          },
+                          child: Text(
+                            'Forgot Password?',
+                            style: TextStyle(
+                              fontSize: 12.sp,
+                            ),
                           ),
                         )
                       ],
@@ -506,10 +512,15 @@ class LoginFinal extends StatelessWidget {
                             ],
                           ),
 
-                          Text(
-                            'Forgot Password?',
-                            style: TextStyle(
-                              fontSize: 12.sp,
+                          InkWell(
+                            onTap: (){
+                              Navigator.pushNamed(context, ForgotPW.id);
+                            },
+                            child: Text(
+                              'Forgot Password?',
+                              style: TextStyle(
+                                fontSize: 12.sp,
+                              ),
                             ),
                           )
                         ],
